@@ -23,4 +23,10 @@ https://forum.90sec.com/t/topic/1872
 然后批量ping命令：for /f %d in (ip.txt) do (ping %d -n 1 && echo %d >>通.txt || echo %d >>不通.txt)  
 自己去试试自己的阿里云实例吧。  
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-通过分析com.android.browser的源码，发现android默认的browser增加cookie是在数据库中增加记录，和window不同，win是采用一个txt文本文件的形式来存储cookie。而android是将cookie存储在数据库中。具体的介绍在《android cookie存储位置》一文中有介绍。我们都知道，android每个应用程序的存储空间都是独立的。不管使用preference还是database存储，都会在每个/data/data/package name/下面进行存储（preference存储在/data/data/package name/shared_prefs/xxxx.xml）。前面也说到cookie是存在数据库中，那么如果采用非浏览器访问网络需要保留cookie的话我们就应该在database中建立cookies表，并且存入相应的cookies数据。  
+通过分析com.android.browser的源码，发现android默认的browser增加cookie是在数据库中增加记录，和window不同，win是采用一个txt文本文件的形式来存储cookie。而android是将cookie存储在数据库中。具体的介绍在《android cookie存储位置》一文中有介绍。我们都知道，android每个应用程序的存储空间都是独立的。不管使用preference还是database存储，都会在每个/data/data/package name/下面进行存储（preference存储在/data/data/package name/shared_prefs/xxxx.xml）。前面也说到cookie是存在数据库中，那么如果采用非浏览器访问网络需要保留cookie的话我们就应该在database中建立cookies表，并且存入相应的cookies数据。    
+
+        
+pip uninstall onnxruntime
+pip install onnxruntime==1.14.0
+windows 7 + python 3.8.10 (64bit)
+你可以尝试一下。
