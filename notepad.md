@@ -29,4 +29,22 @@ https://forum.90sec.com/t/topic/1872
 pip uninstall onnxruntime  
 pip install onnxruntime==1.14.0  
 windows 7 + python 3.8.10 (64bit)  
-你可以尝试一下。  
+你可以尝试一下。    
+
+下面针对上面2点提出解决办法：  
+
+1、获取版本  
+
+公开的一些获取版本的办法大多是需要鉴权的，这里分享一种不需要登录的办法  
+
+访问/assets/webpack/manifest.json  
+
+图片  
+获取hash值去GitHub对比版本号  
+https://github.com/righel/gitlab-version-nse/blob/main/gitlab_hashes.json  
+
+2、authenticity_token获取  
+
+访问找回密码界面/users/password/new  
+
+查看源代码搜索authenticity_token即可  
