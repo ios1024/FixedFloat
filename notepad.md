@@ -48,3 +48,16 @@ https://github.com/righel/gitlab-version-nse/blob/main/gitlab_hashes.json
 访问找回密码界面/users/password/new  
 
 查看源代码搜索authenticity_token即可  
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+Python2.x 内置了一个简单的HTTP服务器，只需要在命令行下面敲一行命令，一个HTTP服务器就起来了：  
+
+python -m SimpleHTTPServer 8080  
+ 
+
+ 
+
+Python3.x 内置了一个简单的HTTP服务器，只需要在命令行下面敲一行命令，一个HTTP服务器就起来了：  
+
+python -m http.server 8080  
+
+  
